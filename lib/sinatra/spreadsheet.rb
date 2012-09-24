@@ -39,7 +39,7 @@ module Tilt
                 data.call(workbook)
             end
 
-            workbook.write(str = StringIO.new('', 'w'))
+            workbook.write(str = StringIO.new('', 'r+'))
             str.string
         end
 
