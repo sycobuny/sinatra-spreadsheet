@@ -24,7 +24,7 @@ set the appropriate content type and disposition):
 
 ```ruby
 get '/yourtemplate.xls' do
-    response['Content-Disposition'] = "attachent; filename=yourtemplate.xls"
+    response['Content-Disposition'] = "attachment; filename=yourtemplate.xls"
     content_type 'application/excel'
 
     spreadsheet :yourtemplate
